@@ -60,7 +60,7 @@ b = b - \alpha \cdot db
 
 where $\alpha$ is the **learning rate**.
 
-```
+
 ---
 
 ## Code Structure
