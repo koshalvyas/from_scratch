@@ -57,17 +57,16 @@ where $\alpha$ is the **learning rate**.
 ## Code Structure
 
 ```
-initialize_params()
-       ↓
-   forward()        ← uses sigmoid()
-       ↓
-compute_gradients()
-       ↓
- update_params()
-       ↓
-  [loop for n_epochs]
-       ↓
-    predict()
+```mermaid
+flowchart TD
+    A[initialize_params] --> B[forward - uses sigmoid]
+    B --> C[compute_gradients]
+    C --> D[update_params]
+    D --> E{epoch < n_epochs?}
+    E -- Yes --> B
+    E -- No --> F[predict]
+```
+
 ```
 
 ---
