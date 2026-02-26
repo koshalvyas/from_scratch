@@ -1,22 +1,22 @@
-```markdown
-# Logistic Regression From Scratch (NumPy Only)
 
+# Logistic Regression From Scratch (NumPy Only)
+```
 A fully functional implementation of Logistic Regression built from scratch
 using only NumPy — no sklearn for the model itself. This project is ideal for
 anyone who wants to understand the math and code behind logistic regression
 rather than just calling a library function.
-
+```
 ---
 
 ## Why Build From Scratch?
-
+```
 Using `sklearn.LogisticRegression()` is great for production, but building it
 yourself gives you:
 - Deep understanding of how gradient descent works
 - Confidence to debug model issues
 - Foundation to learn neural networks (same building blocks!)
-
 ```
+
 ## Math Behind the Model
 
 ### 1. Sigmoid Function
