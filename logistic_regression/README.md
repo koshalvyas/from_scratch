@@ -1,7 +1,3 @@
-Here's a comprehensive GitHub README based on our entire discussion:
-
-***
-
 ```markdown
 # Logistic Regression From Scratch (NumPy Only)
 
@@ -101,4 +97,4 @@ flowchart TD
 ```
 numpy
 scikit-learn  # only for dataset loading and benchmarking
-```
+
