@@ -35,20 +35,31 @@ Measures how wrong the model's predictions are:
 $$L = -\frac{1}{n} \sum \left[ y \log(\hat{y}) + (1 - y) \log(1 - \hat{y}) \right]$$
 ```
 ### 4. Gradients (Backpropagation)
-How much each parameter contributed to the error:
-```math
-$$\frac{\partial L}{\partial W} = \frac{1}{n} X^T \cdot (\hat{y} - y)$$
 
-$$\frac{\partial L}{\partial b} = \frac{1}{n} \sum (\hat{y} - y)$$
+How much each parameter contributed to the error:
+
+```math
+\frac{\partial L}{\partial W} = \frac{1}{n} X^T \cdot (\hat{y} - y)
 ```
-### 5. Gradient Descent (Parameter Update)
+
+```math
+\frac{\partial L}{\partial b} = \frac{1}{n} \sum (\hat{y} - y)
+```
+
+### 5. Gradient Descent
+
 Nudge parameters in the direction that reduces loss:
+
 ```math
-$$W = W - \alpha \cdot dW$$
-$$b = b - \alpha \cdot db$$
+W = W - \alpha \cdot dW
 ```
+
 ```math
+b = b - \alpha \cdot db
+```
+
 where $\alpha$ is the **learning rate**.
+
 ```
 ---
 
