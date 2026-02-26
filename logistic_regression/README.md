@@ -16,12 +16,12 @@ yourself gives you:
 - Confidence to debug model issues
 - Foundation to learn neural networks (same building blocks!)
 
----
-
+```
 ## Math Behind the Model
 
 ### 1. Sigmoid Function
 Converts any real number into a probability between 0 and 1:
+
 ```math
 $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
 ```
@@ -54,7 +54,7 @@ where $\alpha$ is the **learning rate**.
 
 ## Code Structure
 
-```
+
 ```mermaid
 flowchart TD
     A[initialize_params] --> B[forward - uses sigmoid]
@@ -65,12 +65,9 @@ flowchart TD
     E -- No --> F[predict]
 ```
 
-```
-
----
 
 ## Key Concepts to Remember
-
+```
 | Concept | What It Does |
 |---|---|
 | Sigmoid | Maps predictions to probability (0–1) |
@@ -80,10 +77,10 @@ flowchart TD
 | Learning Rate | Controls how big each update step is |
 | Gradient Descent | Iteratively reduces loss by updating params |
 
----
+```
 
 ## Common Pitfalls & Fixes
-
+```
 - **Loss going up instead of down** → Learning rate is too high, try `lr=0.01`
 - **`ValueError: truth value of array is ambiguous`** → Don't use `if` on numpy
   arrays, use vectorized operations instead
@@ -91,8 +88,8 @@ flowchart TD
   `y_hat = np.clip(y_hat, 1e-8, 1 - 1e-8)`
 - **Forgetting to scale features** → Always use `StandardScaler` before
   training with gradient descent
+```
 
----
 
 ## Requirements
 
